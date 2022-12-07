@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Denk+One&family=Patua+One&family=Raleway:wght@300&display=swap');html {
+@import url('https://fonts.googleapis.com/css2?family=Denk+One&family=Patua+One&family=Raleway:wght@300&display=swap');html 
+{
     box-sizing: border-box;
 }
 
@@ -12,6 +13,180 @@ body {
     color: aliceblue;
 }
 
+h1 {
+    font-size: 60px;
+    margin-left: 1.5em;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 40px;
+    margin-left: 2em;
+    color: #A0A0A0;
+}
+
+button {
+    margin-left: 5em;
+    font-size: large;
+    background-color: black;
+    
+}
+
 .hero-banner {
-    background-color: brown;
+    background-image:url(https://i.pinimg.com/564x/7a/16/b8/7a16b85be478ddcbf4130fe566cec316.jpg);
+    height: 30em;
+    width: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    background-color: black;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+p {
+    padding: 3em 10em 0 10em;
+}
+
+footer {
+    background-color: #333;
+}
+
+.banner {
+    background-image: url(https://i.pinimg.com/564x/55/e8/3c/55e83ca03c9617c15faa94bcbecc0f3a.jpg);
+    height: 30em;
+    width: auto;
+
+}
+
+.banner h1 {
+    text-align: center;
+    padding-top: 5em;
+    font-size: 50px;
+}
+
+.banner-b {
+    background-image: url(https://images.pond5.com/lightning-strikes-black-background-1-footage-051854939_iconl.jpeg);
+    height: 30em;
+    width: auto;
+}
+
+.banner-b h1 {
+    padding: 2em;
+}
+
+section img {
+   height: 30em;
+    width: auto;
+}
+
+@media only screen and (min-width: 650px) {
+
+.paragraph {
+    font-size: large;
+}
+
+footer {
+    font-size: 20px;
+}
+
+nav {
+    font-size: 20px;
+}
+
+}
+
+.container{
+    
+    margin-top: 70em;
+    width: 85vmin;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 20px solid #333;
+    border-radius: 8px;
+}
+
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+img{
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 980px) {
+    .paragraph {
+        font-size: larger;
+    }
+
+    footer {
+        font-size: 25px;
+    }
+
+    nav {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .zeus {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .zeus p {
+        font-size: 13px;
+    }
 }
