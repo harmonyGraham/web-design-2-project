@@ -9,7 +9,7 @@
 
 body {
     line-height: 1.5;
-    background-color: black;
+    background-color: red;
     color: aliceblue;
 }
 
@@ -98,27 +98,12 @@ section img {
     width: auto;
 }
 
-@media only screen and (min-width: 650px) {
-
-.paragraph {
-    font-size: large;
-}
-
-footer {
-    font-size: 20px;
-}
-
-nav {
-    font-size: 20px;
-}
-
-}
 
 .container{
     
     margin-top: 70em;
     width: 85vmin;
-    position: absolute;
+    position: relative;
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
@@ -163,8 +148,71 @@ img{
     width: 100%;
 }
 
+@media only screen and (min-width: 320px) {
+    .paragraph {
+        font-size: 10px;
+    }
+
+    section a img {
+        width: 375px;
+        padding: 10px;
+        height: auto;
+    }
+    
+}
+
+@media only screen and (min-width: 650px) {
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 0;
+        margin: 100px;
+    }
+
+    section a img {
+        width: 300px;
+        height: auto;
+    }
+
+   
+    .paragraph {
+        font-size: 130px;
+        padding: none;
+        margin: 0;
+    }
+
+    .zeus {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    footer {
+        font-size: 20px;
+    }
+    
+    nav {
+        font-size: 20px;
+    }
+
+    
+    }
 
 @media only screen and (min-width: 980px) {
+
+    
+
+    section a img {
+        width: 450px;
+        height: auto;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     .paragraph {
         font-size: larger;
     }
@@ -184,9 +232,11 @@ img{
     .zeus {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        align-items: flex-end;
     }
 
+
     .zeus p {
-        font-size: 13px;
+        font-size: 20px;
     }
 }
