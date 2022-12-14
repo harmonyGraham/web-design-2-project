@@ -7,6 +7,10 @@
     box-sizing: inherit;
 }
 
+footer {
+    text-align: center;
+}
+
 body {
     line-height: 1.5;
     background-color: black;
@@ -14,19 +18,19 @@ body {
 }
 
 h1 {
-    font-size: 60px;
-    margin-left: 1.5em;
+    font-size: 40px;
+    margin-left: .5em;
     margin-top: 0;
 }
 
 h2 {
-    font-size: 40px;
-    margin-left: 2em;
+    font-size: 30px;
+    margin-left: .5em;
     color: #A0A0A0;
 }
 
 button {
-    margin-left: 5em;
+    margin-left: 1em;
     font-size: large;
     background-color: black;
     
@@ -111,7 +115,6 @@ section img {
     border: 20px solid #333;
     border-radius: 8px;
 }
-
 
 .wrapper{
     width: 100%;
@@ -201,6 +204,7 @@ img{
 
 @media only screen and (min-width: 320px) {
 
+
     .zeus p {
         font-size: 15px;
     }
@@ -208,6 +212,8 @@ img{
     .paragraph p {
         font-size: 20px;
         padding-top: 2em;
+        padding-left: 2em;
+        padding-right: 2em;
     }
 
     section a img {
@@ -253,9 +259,17 @@ img{
 
 @media only screen and (min-width: 650px) {
 
+
+    .hero-banner h1 {
+        font-size: 5em;
+    }
+
+    .hero-banner h2 {
+        font-size: 3em;
+    }
     .banner-b h1 {
         font-size: 6em;
-        padding: 3em 1.5em;
+        padding: 4em 1.5em;
         padding-top: 2em;
     }
 
@@ -342,6 +356,11 @@ img{
 
 @media only screen and (min-width: 980px) {
 
+    .wrapper-2 img {
+        height: 35em;
+        width: auto;
+    }
+
     section a img {
         width: 450px;
         height: auto;
@@ -385,7 +404,7 @@ img{
 
     .banner-b h1 {
         text-align: center;
-        font-size: 10em;
+        font-size: 5em;
     }
 
     .banner h1 {
@@ -399,6 +418,25 @@ img{
         margin-top: 20em;
         width: 200vmin;
         height: 30em;
+        position: relative;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        overflow: hidden;
+        border: 20px solid #333;
+        border-radius: 8px;
+    }
+
+    .paragraph p {
+        padding-left: 10em;
+        padding-right: 10em;
+        padding-bottom: 0;
+    }
+
+    .container{
+    
+        margin-top: 35em;
+        width: 160vmin;
         position: relative;
         transform: translate(-50%,-50%);
         top: 50%;
